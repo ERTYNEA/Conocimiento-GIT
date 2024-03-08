@@ -3,7 +3,7 @@ Comandos sencillos de GIT para usarlos en el dia a dia 🤓👍
 ---
 **Clonar una rama especifica del servidor:**
 ```
-git clone -b NombreDeLaRamaAClonar DirectorioLocalDondeSeClonara
+git clone -b NombreDeLaRamaDelServidorAClonar DirectorioLocalDondeSeClonara
 ```
 **Ver la configuración actual de git:**
 ```
@@ -41,7 +41,7 @@ git fetch --prune
 ```
 git stash save -u
 ```
-**Mostrar los cambios temporalmente que se almacenaron en la pila:**
+**Mostrar los cambios temporales que se almacenaron en la pila:**
 ```
 git stash list
 ```
@@ -57,7 +57,7 @@ git stash clear
 ```
 git pull
 ```
-**Aplicar en nuestra actual rama local los cambios que tiene otra de nuestras ramas locales (posteriormente se puede hacer git push para subir nuestra rama actual al servidor):**
+**Aplicar en nuestra rama local actual los cambios que tiene otra de nuestras ramas locales (posteriormente se puede hacer git push para subir nuestra rama actual al servidor):**
 ```
 git merge NombreDeLaRamaConLosCambios
 ```
@@ -97,19 +97,19 @@ git restore RutaAlArchivo
 ```
 git branch
 ```
-**Ver las ramas en el servidor:**
+**Ver las ramas del servidor:**
 ```
 git branch -r
 ```
-**Ver las ramas locales y las ramas en el servidor:**
+**Ver las ramas locales y las ramas del servidor:**
 ```
 git branch -a
 ```
-**Borrar rama local (posteriormente se puede hacer git push origin NombreDeLaRamaBorrada para borrarla en el servidor):**
+**Borrar una rama local (posteriormente se puede hacer git push origin NombreDeLaRamaBorrada para borrarla en el servidor):**
 ```
 git branch -d NombreDeLaRamaABorrar
 ```
-**Borrar rama local de forma forzada (posteriormente se puede hacer git push origin NombreDeLaRamaBorrada para borrarla en el servidor):**
+**Borrar una rama local de forma forzada (posteriormente se puede hacer git push origin NombreDeLaRamaBorrada para borrarla en el servidor):**
 ```
 git branch -D NombreDeLaRamaABorrar
 ```
