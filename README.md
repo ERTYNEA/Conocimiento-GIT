@@ -1,5 +1,5 @@
 # Conocimiento-GIT
-Comandos sencillos de GIT para usar en el dia a dia 🤓👍
+Comandos sencillos de GIT para usarlos en el dia a dia 🤓👍
 ---
 **Clonar una rama especifica del servidor:**
 ```
@@ -21,6 +21,10 @@ git config --global user.email “EmailDeUsuaio”
 ```
 git remote -v
 ```
+**Cambiar la url del origen remoto de datos del repositorio:**
+```
+git remote set-url origin NuevaUrl
+```
 **Ver el estado del repositorio local:**
 ```
 git status
@@ -33,7 +37,7 @@ git fetch
 ```
 git fetch --prune
 ```
-**Almacenar temporalmente en la pila los cambios que aun no se han comiteado incluyendo los no trackeados:**
+**Almacenar temporalmente en la pila los cambios que aun no se han comiteado incluyendo los cambios de los archivos no trackeados:**
 ```
 git stash save -u
 ```
@@ -49,11 +53,11 @@ git stash apply "stash@{0}"
 ```
 git stash clear
 ```
-**Aplicar en nuestra rama local los cambios que se han consultado al servidor previamente mediante un fetch:**
+**Aplicar en nuestra rama local los cambios que se han consultado al servidor (previamente mediante un git fetch):**
 ```
 git pull
 ```
-**Aplicar en nuestra rama local los cambios que tiene otra de nuestras ramas locales (posteriormente se puede hacer git push para subirlo al servidor):**
+**Aplicar en nuestra actual rama local los cambios que tiene otra de nuestras ramas locales (posteriormente se puede hacer git push para subir nuestra rama actual al servidor):**
 ```
 git merge NombreDeLaRamaConLosCambios
 ```
@@ -73,7 +77,7 @@ git checkout NombreDeLaRamaALaQueCambiar
 ```
 git diff RutaAlArchivo
 ```
-**Añadir manualmente pequeños cambios de un archivo en el futuro commit:**
+**Añadir manualmente pequeños cambios de un archivo a un futuro commit:**
 ```
 git add -p RutaAlArchivo
 ```
@@ -81,7 +85,7 @@ git add -p RutaAlArchivo
 ```
  git commit -m MensajeDelCommit
 ```
-**Mandar los cambios comiteados al servidor:**
+**Mandar los cambios que ya se han comiteado al servidor:**
 ```
 git push
 ```
@@ -116,12 +120,4 @@ git log RutaAlArchivo
 **Restaurar un archivo a un commit anterior:**
 ```
 git checkout CodigoDelCommitExtraidoConGitLog RutaAlArchivo
-```
-**Ver las urls al servidor:**
-```
-git remote -v
-```
-**Cambiar las urls a otro servidor:**
-```
-git remote set-url origin NuevaUrl
 ```
