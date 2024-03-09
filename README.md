@@ -1,6 +1,6 @@
 # Conocimiento-GIT
 ![Git-Logo](https://github.com/ERTYNEA/Conocimiento-GIT/blob/main/Img/Git-Logo.png)
-Comandos sencillos de GIT para usarlos en el dia a dia 🤓👍
+Comandos sencillos de GIT para usarlos en el día a día 🤓👍
 ---
 **Clonar una rama especifica del servidor:**
 ```
